@@ -1,0 +1,18 @@
+visible: true
+featured: true
+slug: deforestation
+title: "Deforestation Risk Prediction"
+subtitle: "Multi-dimensional ML approach for the Congo Basin"
+date_start: 2024
+date_end: null
+tags: [machine-learning, geospatial, xgboost, shap, earth-engine]
+thumbnail: "/images/projects/deforestation.jpg"
+description: >
+  Multi-dimensional deforestation risk prediction combining satellite imagery, climate,
+  demographics, conflict, economic, political, and cultural data. Triple ablation study
+  (dimension × temporal scale × spatial resolution) with SHAP interpretability.
+  33 data sources, 250K sample points covering the Congo Basin.
+collaborators:
+  - name: "QUT Brisbane"
+links: []
+tech: [Python, XGBoost, scikit-learn, SHAP, Google Earth Engine, GeoPandas, Streamlit]

@@ -1,0 +1,46 @@
+name: "Guillaume Maîtrejean"
+title: "Academic Portfolio"
+position: "Associate Professor"
+institution: "Grenoble Alpes Université"
+lab: "Laboratoire Rhéologie et Procédés (LRP)"
+email: "guillaume.maitrejean@univ-grenoble-alpes.fr"
+github: "lauguimel"
+linkedin: "guillaume-maitrejean"
+photo: "/images/portrait.jpg"
+bio_short: >
+  Associate Professor at Grenoble Alpes Université, researcher at Laboratoire Rhéologie et Procédés.
+  Expertise in computational fluid dynamics, rheology, and machine learning applied to physical systems.
+bio_long: >
+  As a multidisciplinary researcher and associate professor at Polytech Grenoble (Materials Department),
+  I combine expertise in fluid mechanics, rheology, and data science. My research spans from numerical
+  simulation of complex fluids to machine learning applications in geospatial analysis and wind energy.
+  I hold a Ph.D. from Université Joseph Fourier on numerical modelling of suspension kinetic theory,
+  and have worked at CERN and ÉTS Montréal before joining UGA in 2013.
+research_interests:
+  - Machine Learning for Physical Systems
+  - Computational Fluid Dynamics
+  - Rheology & Complex Fluids
+  - Geospatial Data Science
+  - Wind Energy Downscaling
+skills:
+  Simulation:
+    - Ansys Workbench/APDL
+    - OpenFOAM
+    - Basilisk
+    - COMSOL
+    - CATIA
+  Programming:
+    - Python
+    - JavaScript
+    - MATLAB/Octave
+    - C/C++
+  Data Science:
+    - scikit-learn
+    - Keras/TensorFlow
+    - pandas
+    - SHAP
+  DevOps:
+    - Docker
+    - Git
+    - Jenkins CI/CD
+    - NodeJS

@@ -1,0 +1,15 @@
+visible: true
+slug: continuum-mechanics
+title: "Continuum Mechanics"
+institution: "Polytech Grenoble"
+level: "Engineering degree (Bac+4/5)"
+years: "2013 — present"
+hours: "~50h/year"
+description: >
+  Fundamentals of continuum mechanics applied to solid and fluid media.
+  Stress and strain tensors, constitutive laws, conservation equations.
+topics:
+  - Stress and strain tensors
+  - Constitutive laws
+  - Conservation equations
+  - Applications to solids and fluids

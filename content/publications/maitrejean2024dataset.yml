@@ -1,0 +1,21 @@
+visible: true
+featured: true
+cite_key: maitrejean2024dataset
+type: article
+title: "Comprehensive experimental dataset on large-amplitude Rayleigh-Plateau instability in continuous InkJet printing regime"
+authors:
+  - "Maitrejean, G."
+  - "Cousin, M."
+  - "Truong, F."
+  - "Verdoot, V."
+  - "Hugenell, F."
+  - "Roux, D.C.D."
+journal: "Data in Brief"
+year: 2024
+volume: "52"
+pages: "109941"
+doi: ""
+abstract: ""
+pdf_url: ""
+project_slug: "rheodrop"
+tags: [inkjet, rayleigh-plateau, experimental-data]
