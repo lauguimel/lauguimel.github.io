@@ -1,0 +1,16 @@
+visible: false
+featured: false
+slug: gastrointestinal
+title: "Gastrointestinal Biomechanics"
+subtitle: "Fluid mechanical modeling coupled with X-ray video-defecography"
+date_start: 2022
+date_end: null
+tags: [biomechanics, cfd, medical-imaging, fluid-mechanics]
+thumbnail: "/images/projects/gastrointestinal.jpg"
+description: >
+  Investigation of human defecation mechanics by coupling computational fluid
+  dynamics with X-ray video-defecography. Development of patient-specific
+  models for clinical diagnosis support.
+collaborators: []
+links: []
+tech: [OpenFOAM, Python, Medical Imaging]

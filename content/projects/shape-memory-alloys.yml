@@ -1,0 +1,18 @@
+visible: true
+featured: false
+slug: shape-memory-alloys
+title: "Shape Memory Alloy Foams"
+subtitle: "Superelastic behavior of porous SMA structures"
+date_start: 2012
+date_end: 2014
+tags: [sma, shape-memory, superelasticity, foam, finite-elements]
+thumbnail: "/images/projects/sma.jpg"
+description: >
+  Post-doctoral research at ÉTS Montréal on the mechanical behavior of porous
+  shape memory alloy (SMA) foams. Unit cell analysis of tetrakaidecahedral
+  structures and density-dependent macroscale superelastic response using
+  2D and 3D finite element approaches.
+collaborators:
+  - name: "Patrick Bhatt (ÉTS Montréal)"
+links: []
+tech: [Ansys, MATLAB, Finite Elements]

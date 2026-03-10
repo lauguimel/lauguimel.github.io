@@ -1,0 +1,20 @@
+visible: true
+featured: false
+slug: colloidal-suspensions
+title: "Kinetic Theory of Colloidal Suspensions"
+subtitle: "Multiscale modeling of microstructure, rheology, and migration"
+date_start: 2008
+date_end: 2015
+tags: [kinetic-theory, colloids, rheology, pgd, numerical-methods, multiscale]
+thumbnail: "/images/projects/colloids.jpg"
+description: >
+  Ph.D. and post-doctoral research on the numerical modeling of colloidal suspensions
+  using kinetic theory. Development of deterministic solvers based on Proper Generalized
+  Decomposition (PGD) for high-dimensional problems. Study of microstructure evolution
+  during mixing, morphology-rheology-migration coupling, and mesoscopic models.
+collaborators:
+  - name: "Amine Ammar (ENSAM)"
+  - name: "Francisco Chinesta (EC Nantes)"
+  - name: "Miroslav Grmela (Polytechnique Montréal)"
+links: []
+tech: [MATLAB, Fortran, PGD, Finite Elements]

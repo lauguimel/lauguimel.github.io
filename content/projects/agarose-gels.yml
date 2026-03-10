@@ -1,0 +1,17 @@
+visible: true
+featured: false
+slug: agarose-gels
+title: "Agarose Gel Characterization"
+subtitle: "Physical properties and reversibility in solvent/non-solvent media"
+date_start: 2023
+date_end: null
+tags: [rheology, gels, agarose, characterization]
+thumbnail: "/images/projects/agarose.jpg"
+description: >
+  Investigation of the physical properties of agarose gels in different media.
+  Study of the reversibility of gel properties following solvent exchange,
+  combining rheological measurements with structural characterization.
+collaborators:
+  - name: "Denis Roux (LRP)"
+links: []
+tech: [Rheometry, SAXS]

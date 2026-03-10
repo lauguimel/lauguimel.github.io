@@ -17,7 +17,21 @@ interface BibEntry {
 }
 
 function cleanLatex(s: string): string {
+	const accentMap: Record<string, Record<string, string>> = {
+		"'": { e: 'é', a: 'à', i: 'í', o: 'ó', u: 'ú', E: 'É', A: 'À' },
+		'`': { e: 'è', a: 'à', u: 'ù', E: 'È', A: 'À' },
+		'^': { e: 'ê', a: 'â', i: 'î', o: 'ô', u: 'û', E: 'Ê', I: 'Î' },
+		'"': { e: 'ë', i: 'ï', o: 'ö', u: 'ü', a: 'ä' },
+		'~': { n: 'ñ', a: 'ã', o: 'õ' },
+		'c': { c: 'ç', C: 'Ç' },
+	};
 	return s
+		// \^{\i} or \^{i} or \'{e} — LaTeX accents with braces (handle \i = dotless i)
+		.replace(/\\(['^`"~c])\{\\i\}/g, (_, acc) => accentMap[acc]?.['i'] ?? 'i')
+		.replace(/\\(['^`"~c])\{(\w)\}/g, (_, acc, ch) => accentMap[acc]?.[ch] ?? ch)
+		// \^\i or \^i or \'e — LaTeX accents without braces (handle \i = dotless i)
+		.replace(/\\(['^`"~c])\\i/g, (_, acc) => accentMap[acc]?.['i'] ?? 'i')
+		.replace(/\\(['^`"~c])(\w)/g, (_, acc, ch) => accentMap[acc]?.[ch] ?? ch)
 		.replace(/[{}]/g, '')
 		.replace(/\\&/g, '&')
 		.replace(/\\\\/g, '')

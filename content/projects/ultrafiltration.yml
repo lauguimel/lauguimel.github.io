@@ -1,0 +1,17 @@
+visible: true
+featured: false
+slug: ultrafiltration
+title: "Colloidal Ultrafiltration"
+subtitle: "In-situ SAXS concentration profiling during cross-flow filtration"
+date_start: 2016
+date_end: 2017
+tags: [filtration, saxs, colloids, modeling]
+thumbnail: "/images/projects/ultrafiltration.jpg"
+description: >
+  Modeling and analysis of concentration profiles obtained by in-situ SAXS
+  during cross-flow ultrafiltration of colloidal suspensions. Combining
+  experimental synchrotron measurements with numerical fluid dynamics modeling.
+collaborators:
+  - name: "Fei Jin"
+links: []
+tech: [Python, SAXS, Modeling]

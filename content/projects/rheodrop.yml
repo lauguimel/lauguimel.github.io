@@ -1,0 +1,21 @@
+visible: true
+featured: true
+slug: rheodrop
+title: "Rheodrop — Inkjet Rheometry"
+subtitle: "ML-powered rheological identification from continuous inkjet printing"
+date_start: 2016
+date_end: null
+tags: [machine-learning, rheology, inkjet, cij, fluid-mechanics, cnn]
+thumbnail: "/images/projects/rheodrop.jpg"
+description: >
+  Development of a novel rheometric approach based on continuous inkjet (CIJ) printing
+  combined with machine learning. By analyzing jet breakup patterns, we can identify
+  fluid rheological properties non-intrusively. This includes comprehensive experimental
+  datasets, numerical simulations of Newtonian and non-Newtonian jets, and CNN-based
+  classification of fluid types. A patent was filed for this method.
+collaborators:
+  - name: "Denis Roux (LRP)"
+  - name: "Adeline Samson (LJK)"
+  - name: "Nadia El Kissi (LRP)"
+links: []
+tech: [Python, TensorFlow, OpenFOAM, Basilisk, MATLAB]

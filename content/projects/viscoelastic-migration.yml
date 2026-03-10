@@ -1,0 +1,17 @@
+visible: true
+featured: false
+slug: viscoelastic-migration
+title: "Viscoelastic Particle Migration"
+subtitle: "Reversal of migration in viscoelastic solutions"
+date_start: 2023
+date_end: null
+tags: [viscoelasticity, particle-migration, microfluidics, rheology]
+thumbnail: "/images/projects/viscoelastic.jpg"
+description: >
+  Study of particle migration phenomena in viscoelastic fluid flows. Investigation
+  of the reversal of migration direction at high solvent viscosity ratios, combining
+  experimental microfluidics with theoretical modeling.
+collaborators:
+  - name: "Vivaswan Salas"
+links: []
+tech: [Microfluidics, Python, Rheometry]
