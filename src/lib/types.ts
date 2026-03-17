@@ -10,6 +10,8 @@ export interface SiteConfig {
 	photo: string;
 	bio_short: string;
 	bio_long: string;
+	experience: { title: string; institution: string; years: string }[];
+	education: { degree: string; institution: string; years: string; topic?: string }[];
 	research_interests: string[];
 	skills: Record<string, string[]>;
 }
@@ -28,6 +30,8 @@ export interface Project {
 	collaborators: { name: string }[];
 	links: { label: string; url: string }[];
 	tech: string[];
+	figures: { src: string; caption: string }[];
+	long_description: string;
 }
 
 export interface Publication {

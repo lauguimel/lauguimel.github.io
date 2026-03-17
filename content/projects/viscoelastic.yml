@@ -1,0 +1,49 @@
+visible: true
+featured: true
+slug: viscoelastic
+title: "Viscoelastic Flows"
+subtitle: "Particle migration, thermal control, and secondary flows in microfluidic devices"
+date_start: 2020
+date_end: null
+tags: [cfd, openfoam, viscoelastic, microfluidics, rheology, particle-migration]
+thumbnail: "/images/projects/viscoelastic.jpg"
+description: >
+  Research on viscoelastic fluid dynamics including particle migration in microfluidic channels,
+  thermal control of secondary flows, and natural convection with non-Newtonian fluids.
+  Combines OpenFOAM/RheoTool simulations with experimental validation.
+long_description: >
+  Viscoelastic fluids exhibit complex flow behaviors that can be harnessed for precise particle
+  manipulation in microfluidic devices. A central theme of this research program is understanding
+  how elastic normal stresses drive lateral migration of suspended particles in channel flows.
+  Working with J.J. Salas-Barzola, we have developed methods to quantify the first normal stress
+  difference in shear-thinning viscoelastic fluids by analyzing particle focusing dynamics,
+  providing a new rheometric technique based on microfluidic observations.
+
+
+  Temperature offers a largely unexplored lever to control viscoelastic microflows. Our work on
+  thermal restructuring demonstrates that moderate temperature gradients can dramatically alter
+  the velocity profile and secondary flow patterns in polymer solutions, with weaker thermal
+  forcing sometimes producing faster flows — a counter-intuitive result arising from the
+  nonlinear coupling between viscosity, elasticity, and temperature. These findings open new
+  avenues for thermally tunable microfluidic devices.
+
+
+  Natural convection in viscoelastic fluids presents additional challenges due to the interplay
+  between buoyancy, viscous, and elastic forces. Using OpenFOAM with the RheoTool library
+  (rheoHeatFoam solver), we conduct large parameter sweeps across Prandtl number (0.71–1000),
+  Rayleigh number (1e3–1e7), and rheological contrast, studying both Newtonian and viscoelastic
+  regimes on HPC clusters. This work extends classical Rayleigh-Bénard convection theory to
+  complex fluids.
+
+
+  In collaboration with V. Chandrashekar and E. Sauret, we also investigate flow asymmetry
+  phenomena in viscoelastic channel flows, where elastic instabilities break the expected
+  symmetry of the velocity field. These studies combine high-fidelity numerical simulations
+  with theoretical analysis to map the parameter space where such transitions occur.
+collaborators:
+  - name: "Vivaswan Chandrashekar"
+  - name: "Gaetano D'Avino"
+  - name: "Edoardo Sauret (QUT)"
+links: []
+tech: [OpenFOAM, RheoTool, Python, ParaView, HPC]
+figures: []

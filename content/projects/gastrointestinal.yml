@@ -1,16 +1,51 @@
-visible: false
-featured: false
+visible: true
+featured: true
 slug: gastrointestinal
 title: "Gastrointestinal Biomechanics"
-subtitle: "Fluid mechanical modeling coupled with X-ray video-defecography"
+subtitle: "AI-driven analysis of rectal evacuation dynamics from X-ray video-defecography"
 date_start: 2022
 date_end: null
-tags: [biomechanics, cfd, medical-imaging, fluid-mechanics]
-thumbnail: "/images/projects/gastrointestinal.jpg"
+tags: [biomechanics, deep-learning, medical-imaging, fluid-mechanics, clinical-data, computer-vision]
+thumbnail: "/images/projects/gastrointestinal/evacuation_clusters.png"
 description: >
-  Investigation of human defecation mechanics by coupling computational fluid
-  dynamics with X-ray video-defecography. Development of patient-specific
-  models for clinical diagnosis support.
-collaborators: []
-links: []
-tech: [OpenFOAM, Python, Medical Imaging]
+  Large-scale analysis of human defecation mechanics combining deep learning segmentation
+  (SAM 2, Detectron2) with computational fluid dynamics modeling on 1488 patients from
+  X-ray video-defecography. Identification of distinct kinetic phenotypes that reveal
+  discordances between radiological reports and objective evacuation dynamics.
+long_description: >
+  This project investigates human defecation biomechanics by coupling AI-based image
+  analysis with fluid mechanical modeling on a unique clinical dataset of 1488 patients
+  (CHU Grenoble, 1999-2005). We developed an automated pipeline using Detectron2 and
+  SAM 2 to segment the rectum in X-ray video-defecography sequences, extracting
+  time-resolved evacuation curves for each patient.
+
+
+  Two main research directions are pursued. First, we validated Yang's evacuation time
+  law on this large cohort using Bingham rheometry, establishing quantitative benchmarks
+  for normal vs. pathological evacuation times. Second, we applied variational
+  autoencoders (VAE) with attention mechanisms to discover latent evacuation phenotypes
+  through unsupervised temporal clustering. This analysis revealed two distinct kinetic
+  populations (evacuators vs. non-evacuators) and showed that 35% of patients with
+  "Abnormal" radiological reports actually exhibit kinetically normal evacuation patterns
+  -- suggesting systematic over-interpretation of morphological findings in clinical
+  practice.
+
+
+  The segmentation pipeline was upgraded from Detectron2 (Mask R-CNN) to SAM 2 with
+  anchor-frame propagation, processing 447 out of 463 eligible patients with improved
+  temporal consistency.
+collaborators:
+  - name: "Clement de Loubens"
+  - name: "Henrique Lefundes Da Silva"
+  - name: "Stephane Tanguy"
+  - name: "Jean-Luc Faucheron"
+  - name: "Anais Dubreuil"
+links:
+  - label: "SB 2023 Conference Paper"
+    url: "https://doi.org/10.1080/10255842.2023.2258827"
+tech: [Python, SAM 2, Detectron2, PyTorch, OpenFOAM, scikit-learn, LaTeX]
+figures:
+  - src: "/images/projects/gastrointestinal/evacuation_clusters.png"
+    caption: "Unsupervised clustering of rectal evacuation curves using VAE (SAM 2, K=2): mean profiles and individual sample curves for evacuator (C1) and non-evacuator (C2) phenotypes."
+  - src: "/images/projects/gastrointestinal/clinical_comparison.png"
+    caption: "Clinical characterization of kinetic phenotypes: evacuators (C1) show significantly higher flow rates and residue levels, with 80% classified as functionally abnormal vs. 40% for non-evacuators (C2)."

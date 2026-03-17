@@ -4,20 +4,8 @@
 
 	const site = getSiteConfig();
 
-	const education = [
-		{ degree: 'Ph.D.', institution: 'Université Joseph Fourier', years: '2008–2011' },
-		{ degree: 'M.Sc.', institution: 'Université Joseph Fourier', years: '2006–2008' }
-	];
-
-	const experience = [
-		{
-			role: 'Associate Professor',
-			institution: 'Grenoble Alpes Université',
-			years: '2013–present'
-		},
-		{ role: 'Research Engineer', institution: 'CERN', years: '2013–2014' },
-		{ role: 'Post-doc', institution: 'LAMSI ÉTS Montréal', years: '2012' }
-	];
+	const experience = site.experience ?? [];
+	const education = site.education ?? [];
 </script>
 
 <SEO title="About" description={site.bio_short} url="/about" />
@@ -72,47 +60,54 @@
 		</section>
 	{/if}
 
-	<!-- Education -->
-	<section>
-		<h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Education</h2>
-		<div class="space-y-4">
-			{#each education as item}
-				<div
-					class="flex items-start gap-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-4 shadow-sm"
-				>
-					<div
-						class="shrink-0 w-2 h-2 mt-2.5 rounded-full bg-blue-500 dark:bg-blue-400"
-					></div>
-					<div>
-						<p class="font-semibold text-gray-900 dark:text-white">{item.degree}</p>
-						<p class="text-sm text-gray-600 dark:text-gray-400">
-							{item.institution} &mdash; {item.years}
-						</p>
-					</div>
-				</div>
-			{/each}
-		</div>
-	</section>
-
 	<!-- Experience -->
-	<section>
-		<h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Experience</h2>
-		<div class="space-y-4">
-			{#each experience as item}
-				<div
-					class="flex items-start gap-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-4 shadow-sm"
-				>
+	{#if experience.length > 0}
+		<section>
+			<h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Experience</h2>
+			<div class="space-y-4">
+				{#each experience as item}
 					<div
-						class="shrink-0 w-2 h-2 mt-2.5 rounded-full bg-green-500 dark:bg-green-400"
-					></div>
-					<div>
-						<p class="font-semibold text-gray-900 dark:text-white">{item.role}</p>
-						<p class="text-sm text-gray-600 dark:text-gray-400">
-							{item.institution} &mdash; {item.years}
-						</p>
+						class="flex items-start gap-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-4 shadow-sm"
+					>
+						<div
+							class="shrink-0 w-2 h-2 mt-2.5 rounded-full bg-primary-500 dark:bg-primary-400"
+						></div>
+						<div>
+							<p class="font-semibold text-gray-900 dark:text-white">{item.title}</p>
+							<p class="text-sm text-gray-600 dark:text-gray-400">
+								{item.institution} &mdash; {item.years}
+							</p>
+						</div>
 					</div>
-				</div>
-			{/each}
-		</div>
-	</section>
+				{/each}
+			</div>
+		</section>
+	{/if}
+
+	<!-- Education -->
+	{#if education.length > 0}
+		<section>
+			<h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Education</h2>
+			<div class="space-y-4">
+				{#each education as item}
+					<div
+						class="flex items-start gap-4 rounded-lg border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-4 shadow-sm"
+					>
+						<div
+							class="shrink-0 w-2 h-2 mt-2.5 rounded-full bg-amber-500 dark:bg-amber-400"
+						></div>
+						<div>
+							<p class="font-semibold text-gray-900 dark:text-white">{item.degree}</p>
+							<p class="text-sm text-gray-600 dark:text-gray-400">
+								{item.institution} &mdash; {item.years}
+							</p>
+							{#if item.topic}
+								<p class="text-sm text-gray-500 dark:text-gray-500 mt-1 italic">{item.topic}</p>
+							{/if}
+						</div>
+					</div>
+				{/each}
+			</div>
+		</section>
+	{/if}
 </div>

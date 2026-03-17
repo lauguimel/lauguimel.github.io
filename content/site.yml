@@ -16,6 +16,33 @@ bio_long: >
   simulation of complex fluids to machine learning applications in geospatial analysis and wind energy.
   I hold a Ph.D. from Université Joseph Fourier on numerical modelling of suspension kinetic theory,
   and have worked at CERN and ÉTS Montréal before joining UGA in 2013.
+experience:
+  - title: "Visiting Academic"
+    institution: "Queensland University of Technology (QUT), Brisbane"
+    years: "2024 — present"
+  - title: "Associate Professor"
+    institution: "Grenoble Alpes Université, Polytech Grenoble"
+    years: "2013 — present"
+  - title: "Post-doctoral Researcher"
+    institution: "ÉTS Montréal"
+    years: "2012 — 2013"
+  - title: "Research Fellow"
+    institution: "CERN, Geneva"
+    years: "2011 — 2012"
+  - title: "Ph.D. in Mechanics"
+    institution: "Université Joseph Fourier, Grenoble"
+    years: "2008 — 2011"
+education:
+  - degree: "Ph.D. in Mechanics"
+    institution: "Université Joseph Fourier, Grenoble"
+    years: "2008 — 2011"
+    topic: "Numerical modelling of suspension kinetic theory"
+  - degree: "M.Sc. in Mechanics"
+    institution: "Université Joseph Fourier, Grenoble"
+    years: "2006 — 2008"
+  - degree: "B.Sc. in Mechanics"
+    institution: "Université Joseph Fourier, Grenoble"
+    years: "2003 — 2006"
 research_interests:
   - Machine Learning for Physical Systems
   - Computational Fluid Dynamics

@@ -1,3 +1,32 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --color-primary-50: oklch(0.97 0.02 260);
+  --color-primary-100: oklch(0.93 0.04 260);
+  --color-primary-200: oklch(0.87 0.08 260);
+  --color-primary-300: oklch(0.78 0.12 260);
+  --color-primary-400: oklch(0.68 0.16 260);
+  --color-primary-500: oklch(0.55 0.20 260);
+  --color-primary-600: oklch(0.48 0.22 260);
+  --color-primary-700: oklch(0.42 0.20 260);
+  --color-primary-800: oklch(0.35 0.16 260);
+  --color-primary-900: oklch(0.28 0.12 260);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better selection color */
+::selection {
+  background-color: var(--color-primary-200);
+}
+
+.dark ::selection {
+  background-color: var(--color-primary-800);
+}

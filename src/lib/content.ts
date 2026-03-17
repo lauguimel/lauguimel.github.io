@@ -53,6 +53,10 @@ export function getFeaturedPublications(): Publication[] {
 	return getPublications().filter((p) => p.featured);
 }
 
+export function getPublicationsByProject(projectSlug: string): Publication[] {
+	return getPublications().filter((p) => p.project_slug === projectSlug);
+}
+
 export function getTeaching(): TeachingItem[] {
 	return parseAll<TeachingItem>(teachingFiles);
 }

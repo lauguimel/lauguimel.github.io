@@ -1,11 +1,13 @@
 <script lang="ts">
-	import { getSiteConfig } from '$lib/content';
+	import { getSiteConfig, getPublicationsByProject } from '$lib/content';
+	import PublicationItem from '$lib/components/PublicationItem.svelte';
 	import SEO from '$lib/components/SEO.svelte';
 
 	const site = getSiteConfig();
 	let { data } = $props();
 	const project = data.project;
 
+	const relatedPubs = getPublicationsByProject(project.slug);
 	const isOngoing = project.date_end === null;
 	const dateRange = isOngoing
 		? `${project.date_start}–present`
@@ -18,7 +20,7 @@
 	<!-- Back link -->
 	<a
 		href="/projects"
-		class="inline-flex items-center gap-1 text-sm text-blue-600 dark:text-blue-400 hover:underline mb-8"
+		class="inline-flex items-center gap-1 text-sm text-primary-600 dark:text-primary-400 hover:underline mb-8"
 	>
 		&larr; Back to projects
 	</a>
@@ -55,12 +57,72 @@
 	{/if}
 
 	<!-- Description -->
-	{#if project.description}
+	{#if project.long_description || project.description}
 		<section class="mb-10">
 			<h2 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Description</h2>
-			<p class="text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-line">
-				{project.description}
-			</p>
+			<div class="text-gray-700 dark:text-gray-300 leading-relaxed space-y-4">
+				{#each (project.long_description || project.description).split('\n\n') as paragraph}
+					{#if paragraph.trim()}
+						<p>{paragraph.trim()}</p>
+					{/if}
+				{/each}
+			</div>
+		</section>
+	{/if}
+
+	<!-- Links (prominent, above figures) -->
+	{#if project.links && project.links.length > 0}
+		<section class="mb-10">
+			<div class="flex flex-wrap gap-3 justify-center">
+				{#each project.links as link}
+					<a
+						href={link.url}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium rounded-lg bg-primary-600 text-white hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600 transition-colors shadow-sm"
+					>
+						{link.label}
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="w-4 h-4"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+							stroke-width="2"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-4.5-6h6m0 0v6m0-6L9.75 14.25"
+							/>
+						</svg>
+					</a>
+				{/each}
+			</div>
+		</section>
+	{/if}
+
+	<!-- Figures gallery -->
+	{#if project.figures && project.figures.length > 0}
+		<section class="mb-10">
+			<h2 class="text-xl font-bold text-gray-900 dark:text-white mb-6">Key Results</h2>
+			<div class="space-y-8">
+				{#each project.figures as figure}
+					<figure>
+						<div class="overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-sm">
+							<img
+								src={figure.src}
+								alt={figure.caption}
+								class="w-full h-auto"
+								loading="lazy"
+							/>
+						</div>
+						<figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400 italic px-1">
+							{figure.caption}
+						</figcaption>
+					</figure>
+				{/each}
+			</div>
 		</section>
 	{/if}
 
@@ -71,7 +133,7 @@
 			<div class="flex flex-wrap gap-2">
 				{#each project.tech as t}
 					<span
-						class="px-3 py-1 text-sm rounded-full bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300"
+						class="px-3 py-1 text-sm rounded-full bg-primary-50 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300"
 					>
 						{t}
 					</span>
@@ -92,34 +154,15 @@
 		</section>
 	{/if}
 
-	<!-- Links -->
-	{#if project.links && project.links.length > 0}
+	<!-- Related Publications -->
+	{#if relatedPubs.length > 0}
 		<section class="mb-10">
-			<h2 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Links</h2>
-			<div class="flex flex-wrap gap-3">
-				{#each project.links as link}
-					<a
-						href={link.url}
-						target="_blank"
-						rel="noopener noreferrer"
-						class="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-medium rounded-lg bg-blue-600 text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-colors"
-					>
-						{link.label}
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							class="w-4 h-4"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke="currentColor"
-							stroke-width="2"
-						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-4.5-6h6m0 0v6m0-6L9.75 14.25"
-							/>
-						</svg>
-					</a>
+			<h2 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Related Publications</h2>
+			<div
+				class="bg-white dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-800 shadow-sm divide-y divide-gray-100 dark:divide-gray-800 px-5"
+			>
+				{#each relatedPubs as publication}
+					<PublicationItem {publication} />
 				{/each}
 			</div>
 		</section>

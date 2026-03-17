@@ -5,7 +5,8 @@
 	const year = new Date().getFullYear();
 </script>
 
-<footer class="border-t border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-gray-900 py-8 mt-16">
+<div class="h-px bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-700 to-transparent mt-16"></div>
+<footer class="bg-gray-50/50 dark:bg-gray-900/50 py-8">
 	<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 		<div class="flex justify-center gap-6 mb-4">
 			{#if site.github}

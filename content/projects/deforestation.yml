@@ -5,14 +5,40 @@ title: "Deforestation Risk Prediction"
 subtitle: "Multi-dimensional ML approach for the Congo Basin"
 date_start: 2024
 date_end: null
-tags: [machine-learning, geospatial, xgboost, shap, earth-engine]
-thumbnail: "/images/projects/deforestation.jpg"
+tags: [machine-learning, geospatial, xgboost, shap, earth-engine, remote-sensing]
+thumbnail: "/images/projects/deforestation/demo_zone.png"
 description: >
   Multi-dimensional deforestation risk prediction combining satellite imagery, climate,
   demographics, conflict, economic, political, and cultural data. Triple ablation study
   (dimension × temporal scale × spatial resolution) with SHAP interpretability.
-  33 data sources, 250K sample points covering the Congo Basin.
+long_description: >
+  This project develops a comprehensive machine learning framework for predicting
+  deforestation risk across the Congo Basin — the world's second-largest tropical forest.
+
+
+  Unlike traditional approaches that rely on a few satellite-derived features, we integrate
+  33 heterogeneous data sources spanning 8 thematic dimensions: land cover (Hansen GFC,
+  Sentinel-2), topography (SRTM), climate (CHIRPS, ERA5), night lights (VIIRS),
+  demographics (WorldPop), armed conflict (ACLED), governance (V-Dem), economics (WDI),
+  and commodity prices.
+
+
+  The core contribution is a triple ablation study that systematically evaluates the
+  impact of each dimension, temporal window, and spatial resolution on prediction accuracy.
+  SHAP (SHapley Additive exPlanations) provides feature-level interpretability, revealing
+  which factors drive deforestation in different regions.
+
+
+  A Streamlit dashboard enables interactive exploration of predictions and SHAP values
+  across the study area.
 collaborators:
-  - name: "QUT Brisbane"
-links: []
-tech: [Python, XGBoost, scikit-learn, SHAP, Google Earth Engine, GeoPandas, Streamlit]
+  - name: "Marc Bouvier"
+links:
+  - label: "Streamlit App"
+    url: "https://deforestation-congo.streamlit.app"
+  - label: "GitHub"
+    url: "https://github.com/lauguimel/deforestation"
+tech: [Python, XGBoost, scikit-learn, SHAP, Google Earth Engine, GeoPandas, Streamlit, Plotly]
+figures:
+  - src: "/images/projects/deforestation/demo_zone.png"
+    caption: "Deforestation risk prediction — Demo zone with ground truth overlay"

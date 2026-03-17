@@ -1,21 +1,49 @@
 visible: true
 featured: true
 slug: rheodrop
-title: "Rheodrop — Inkjet Rheometry"
-subtitle: "ML-powered rheological identification from continuous inkjet printing"
+title: "RheoDrop"
+subtitle: "AI-driven rheological identification via inkjet drop formation"
 date_start: 2016
 date_end: null
-tags: [machine-learning, rheology, inkjet, cij, fluid-mechanics, cnn]
-thumbnail: "/images/projects/rheodrop.jpg"
+tags: [machine-learning, cnn, rheology, inkjet, fluid-mechanics, deep-learning, cij]
+thumbnail: "/images/projects/rheodrop/dataset_visualization.png"
 description: >
-  Development of a novel rheometric approach based on continuous inkjet (CIJ) printing
-  combined with machine learning. By analyzing jet breakup patterns, we can identify
-  fluid rheological properties non-intrusively. This includes comprehensive experimental
-  datasets, numerical simulations of Newtonian and non-Newtonian jets, and CNN-based
-  classification of fluid types. A patent was filed for this method.
+  Machine learning framework for identifying fluid rheological properties
+  (viscosity, surface tension, density) from high-speed images of inkjet
+  drop formation using the Rayleigh-Plateau instability.
+long_description: >
+  RheoDrop leverages the Rayleigh-Plateau instability in continuous inkjet (CIJ)
+  printing to identify fluid properties without conventional rheometry. By analyzing
+  the morphology of a jet breaking into droplets, convolutional neural networks
+  can infer viscosity, surface tension, and density simultaneously.
+
+
+  The project has three phases. Phase 1 (2022) demonstrated proof of concept on
+  numerical data, achieving MAPE < 1% for viscosity identification using DNNs trained
+  on Basilisk CFD simulations. Phase 2 (2025) extended this to real experimental data
+  from a Markem-Imaje piezoelectric CIJ printer with 10 Newtonian fluids, reaching
+  98.5% classification accuracy and MAPE < 1% for viscosity and density.
+
+
+  Phase 3 (ongoing) explores conditional Beta-VAE architectures for unsupervised
+  discovery of rheological properties in non-Newtonian fluids, moving beyond
+  supervised classification to continuous property estimation in latent space.
+
+
+  This work has produced 4 peer-reviewed publications in Physics of Fluids and
+  Data in Brief, plus a comprehensive experimental dataset of ~16,000 high-speed
+  images.
 collaborators:
   - name: "Denis Roux (LRP)"
   - name: "Adeline Samson (LJK)"
   - name: "Nadia El Kissi (LRP)"
-links: []
-tech: [Python, TensorFlow, OpenFOAM, Basilisk, MATLAB]
+  - name: "Edoardo Sauret (QUT)"
+links:
+  - label: "Physics of Fluids 2022"
+    url: "https://doi.org/10.1063/5.0100575"
+  - label: "Physics of Fluids 2025"
+    url: "https://doi.org/10.1063/5.0239155"
+tech: [Python, TensorFlow, Keras, PyTorch, Basilisk CFD, scikit-learn, Marimo]
+figures:
+  - src: "/images/projects/rheodrop/dataset_visualization.png"
+    caption: "Experimental CIJ dataset — Drop profiles extracted from high-speed imaging of 10 Newtonian fluids at various stimulation amplitudes"
