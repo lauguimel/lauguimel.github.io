@@ -1,4 +1,4 @@
-visible: true
+visible: false
 featured: false
 slug: agarose-gels
 title: "Agarose Gel Characterization"
@@ -13,5 +13,8 @@ description: >
   combining rheological measurements with structural characterization.
 collaborators:
   - name: "Denis Roux (LRP)"
+  - name: "Isabelle Jeacomine (CERMAV)"
+  - name: "François Caton (LRP)"
+  - name: "Marguerite Rinaudo"
 links: []
 tech: [Rheometry, SAXS]

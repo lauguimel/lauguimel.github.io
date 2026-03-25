@@ -2,14 +2,20 @@ visible: true
 featured: false
 cite_key: roux2024reversibility
 type: article
-title: Reversibility in the Physical Properties of Agarose Gels following an Exchange in Solvent and Non-Solvent
-authors: []
-journal: Polymers
+title: "Reversibility in the Physical Properties of Agarose Gels following an Exchange in Solvent and Non-Solvent"
+authors:
+  - "Roux, Denis C.D."
+  - "Caton, François"
+  - "Jeacomine, Isabelle"
+  - "Maîtrejean, Guillaume"
+  - "Rinaudo, Marguerite"
+journal: "Polymers"
 year: 2024
 volume: "16"
 pages: "811"
-doi: ""
+doi: "10.3390/polym16060811"
+hal_url: "https://hal.science/hal-04776990"
 abstract: ""
 pdf_url: ""
 project_slug: "agarose-gels"
-tags: []
+tags: [agarose, gel, solvent-exchange]

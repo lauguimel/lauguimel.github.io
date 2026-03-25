@@ -1,4 +1,4 @@
-visible: true
+visible: false
 featured: false
 slug: ultrafiltration
 title: "Colloidal Ultrafiltration"
@@ -12,6 +12,9 @@ description: >
   during cross-flow ultrafiltration of colloidal suspensions. Combining
   experimental synchrotron measurements with numerical fluid dynamics modeling.
 collaborators:
-  - name: "Fei Jin"
+  - name: "Yao Jin"
+  - name: "Nicolas Hengl (LRP)"
+  - name: "Stéphane Baup"
+  - name: "Frédéric Pignon (LRP)"
 links: []
 tech: [Python, SAXS, Modeling]

@@ -6,7 +6,7 @@ subtitle: "AI-driven rheological identification via inkjet drop formation"
 date_start: 2016
 date_end: null
 tags: [machine-learning, cnn, rheology, inkjet, fluid-mechanics, deep-learning, cij]
-thumbnail: "/images/projects/rheodrop/dataset_visualization.png"
+thumbnail: "/images/projects/rheodrop/thumbnail.jpg"
 description: >
   Machine learning framework for identifying fluid rheological properties
   (viscosity, surface tension, density) from high-speed images of inkjet
@@ -30,20 +30,15 @@ long_description: >
   supervised classification to continuous property estimation in latent space.
 
 
-  This work has produced 4 peer-reviewed publications in Physics of Fluids and
-  Data in Brief, plus a comprehensive experimental dataset of ~16,000 high-speed
-  images.
 collaborators:
   - name: "Denis Roux (LRP)"
-  - name: "Adeline Samson (LJK)"
-  - name: "Nadia El Kissi (LRP)"
-  - name: "Edoardo Sauret (QUT)"
+
 links:
   - label: "Physics of Fluids 2022"
     url: "https://doi.org/10.1063/5.0100575"
   - label: "Physics of Fluids 2025"
     url: "https://doi.org/10.1063/5.0239155"
-tech: [Python, TensorFlow, Keras, PyTorch, Basilisk CFD, scikit-learn, Marimo]
+tech: [TensorFlow, Keras, PyTorch, Basilisk CFD, OpenFoam]
 figures:
   - src: "/images/projects/rheodrop/dataset_visualization.png"
     caption: "Experimental CIJ dataset — Drop profiles extracted from high-speed imaging of 10 Newtonian fluids at various stimulation amplitudes"

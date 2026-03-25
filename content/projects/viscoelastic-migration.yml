@@ -1,4 +1,4 @@
-visible: true
+visible: false
 featured: false
 slug: viscoelastic-migration
 title: "Viscoelastic Particle Migration"
@@ -12,6 +12,10 @@ description: >
   of the reversal of migration direction at high solvent viscosity ratios, combining
   experimental microfluidics with theoretical modeling.
 collaborators:
-  - name: "Vivaswan Salas"
+  - name: "J.J. Salas-Barzola"
+  - name: "Clément de Loubens (LRP)"
+  - name: "Antoine Naillon"
+  - name: "Enric Santanach Carreras"
+  - name: "Hugues Bodiguel (LRP)"
 links: []
 tech: [Microfluidics, Python, Rheometry]

@@ -2,14 +2,18 @@ visible: true
 featured: false
 cite_key: ChandraShekar2025ViscoelasticAsymmetry
 type: article
-title: "Viscoelastic asymmetry in channel flow"
-authors: ["Chandrashekar, V.", "Maîtrejean, G.", "Sauret, E."]
+title: "Experimental Study of Enhanced Flow Asymmetry Due to Viscoelasticity: A Sieve for Viscoelastic Constitutive Models"
+authors:
+  - "ChandraShekar, Vivaswan"
+  - "Maîtrejean, Guillaume"
+  - "Bodiguel, Hugues"
 journal: "Journal of Rheology"
 year: 2025
 volume: ""
 pages: ""
 doi: ""
+hal_url: ""
 abstract: ""
 pdf_url: ""
 project_slug: viscoelastic
-tags: [viscoelastic, rheology, channel-flow]
+tags: [viscoelastic, flow-asymmetry, constitutive-models]

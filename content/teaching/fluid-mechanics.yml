@@ -1,0 +1,15 @@
+visible: true
+slug: fluid-mechanics
+title: "Fluid Mechanics"
+institution: "Polytech Grenoble"
+level: "Engineering degree (Bac+4)"
+years: "2013 — 2024"
+hours: "~40h/year"
+description: >
+  Fundamental principles of internal and external flows. Conservation laws
+  (mass, momentum, energy), dimensional analysis, and engineering applications.
+topics:
+  - Conservation laws (mass, momentum, energy)
+  - Internal and external flows
+  - Dimensional analysis
+  - Pipe flows and losses

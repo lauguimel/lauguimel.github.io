@@ -9,13 +9,25 @@ linkedin: "guillaume-maitrejean"
 photo: "/images/portrait.jpg"
 bio_short: >
   Associate Professor at Grenoble Alpes Université, researcher at Laboratoire Rhéologie et Procédés.
-  Expertise in computational fluid dynamics, rheology, and machine learning applied to physical systems.
+  I work at the interface between fluid mechanics, rheology, and numerical simulation.
 bio_long: >
-  As a multidisciplinary researcher and associate professor at Polytech Grenoble (Materials Department),
-  I combine expertise in fluid mechanics, rheology, and data science. My research spans from numerical
-  simulation of complex fluids to machine learning applications in geospatial analysis and wind energy.
-  I hold a Ph.D. from Université Joseph Fourier on numerical modelling of suspension kinetic theory,
-  and have worked at CERN and ÉTS Montréal before joining UGA in 2013.
+  I am an associate professor at Polytech Grenoble (Materials Department), working at Laboratoire
+  Rhéologie et Procédés. What drives my research is the interplay between simulation and experiment:
+  building numerical models that capture the physics of complex fluids, then confronting them with
+  real-world observations. I enjoy the applied side of engineering science — whether it is predicting
+  how a viscoelastic fluid behaves in a microchannel, understanding particle migration phenomena,
+  or using machine learning to extract rheological properties from inkjet images.
+
+
+  My background is rooted in computational mechanics: I did my PhD on micro-macro modelling of
+  suspensions using kinetic theory, then worked on structural simulation at CERN and shape memory
+  alloy modelling at ÉTS Montréal before joining UGA in 2013. This path gave me a broad toolbox —
+  from finite elements to CFD to data-driven methods — that I now apply to problems in rheology,
+  microfluidics, and biofluid mechanics.
+
+
+  Beyond research, I care about teaching mechanics and simulation to engineering students, and about
+  building collaborations that bridge disciplines and countries.
 experience:
   - title: "Visiting Academic"
     institution: "Queensland University of Technology (QUT), Brisbane"
@@ -44,18 +56,18 @@ education:
     institution: "Université Joseph Fourier, Grenoble"
     years: "2003 — 2006"
 research_interests:
-  - Machine Learning for Physical Systems
   - Computational Fluid Dynamics
   - Rheology & Complex Fluids
-  - Geospatial Data Science
-  - Wind Energy Downscaling
+  - Viscoelastic Microfluidics
+  - Machine Learning for Physical Systems
+  - Biofluid Mechanics
 skills:
   Simulation:
+    - Ansys Fluent
     - Ansys Workbench/APDL
     - OpenFOAM
     - Basilisk
     - COMSOL
-    - CATIA
   Programming:
     - Python
     - JavaScript

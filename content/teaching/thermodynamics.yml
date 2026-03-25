@@ -1,0 +1,14 @@
+visible: true
+slug: thermodynamics
+title: "Thermodynamics & Heat Transfer"
+institution: "ETS Montréal / Grenoble INP"
+level: "Undergraduate / Engineering"
+years: "2009 — 2012"
+hours: ""
+description: >
+  Engineering thermodynamics and introductory heat transfer concepts.
+  Tutorials and laboratory sessions.
+topics:
+  - Laws of thermodynamics
+  - Heat transfer (conduction, convection, radiation)
+  - Thermodynamic cycles

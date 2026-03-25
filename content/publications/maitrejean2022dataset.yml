@@ -11,7 +11,8 @@ journal: Data in Brief
 year: 2022
 volume: "42"
 pages: "108215"
-doi: ""
+doi: "10.1016/j.dib.2022.108215"
+hal_url: "https://hal.science/hal-03818061"
 abstract: ""
 pdf_url: ""
 project_slug: "rheodrop"

@@ -1,4 +1,4 @@
-visible: true
+visible: false
 featured: false
 cite_key: frank2022continuous
 type: article
@@ -9,7 +9,8 @@ journal: Scilight
 year: 2022
 volume: "2022"
 pages: ""
-doi: ""
+doi: "10.1063/10.0013689"
+hal_url: ""
 abstract: ""
 pdf_url: ""
 project_slug: "rheodrop"

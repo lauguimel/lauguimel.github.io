@@ -2,14 +2,21 @@ visible: true
 featured: false
 cite_key: SalasBarzola2025N1Poiseuille
 type: article
-title: "Quantification of First Normal Stress Difference in Shear-Thinning Viscoelastic Fluids via Particle Focusing Dynamics"
-authors: ["Salas-Barzola, J.J.", "Maîtrejean, G.", "Sauret, E."]
-journal: ""
+title: "Quantification of First Normal Stress Difference in Shear-Thinning Viscoelastic Fluids via Particle Focusing Dynamics in Confined Poiseuille Flow"
+authors:
+  - "Salas-Barzola, Xavier"
+  - "Naillon, Antoine"
+  - "de Loubens, Clément"
+  - "Maîtrejean, Guillaume"
+  - "Santanach Carreras, Enric"
+  - "Bodiguel, Hugues"
+journal: "Journal of Non-Newtonian Fluid Mechanics"
 year: 2025
 volume: ""
 pages: ""
 doi: ""
+hal_url: ""
 abstract: ""
 pdf_url: ""
 project_slug: viscoelastic
-tags: [viscoelastic, microfluidics, particle-migration]
+tags: [viscoelastic, microfluidics, particle-migration, normal-stress]

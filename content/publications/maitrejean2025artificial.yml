@@ -4,12 +4,15 @@ cite_key: maitrejean2025artificial
 type: article
 title: "Artificial intelligence-driven rheological identification via the Rayleigh-Plateau instability"
 authors:
-  - Maîtrejean, Guillaume
+  - "Maîtrejean, Guillaume"
+  - "Sauret, Emilie"
+  - "Roux, Denis C.D."
 journal: Physics of Fluids
 year: 2025
-volume: ""
-pages: ""
-doi: ""
+volume: "37"
+pages: "083117"
+doi: "10.1063/5.0277260"
+hal_url: ""
 abstract: ""
 pdf_url: ""
 project_slug: "rheodrop"

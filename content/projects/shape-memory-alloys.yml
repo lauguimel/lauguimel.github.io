@@ -1,4 +1,4 @@
-visible: true
+visible: false
 featured: false
 slug: shape-memory-alloys
 title: "Shape Memory Alloy Foams"
@@ -13,6 +13,8 @@ description: >
   structures and density-dependent macroscale superelastic response using
   2D and 3D finite element approaches.
 collaborators:
-  - name: "Patrick Bhatt (ÉTS Montréal)"
+  - name: "Patrick Terriault (ÉTS Montréal)"
+  - name: "Vladimir Brailovski (ÉTS Montréal)"
+  - name: "Diego Devís Capilla"
 links: []
 tech: [Ansys, MATLAB, Finite Elements]

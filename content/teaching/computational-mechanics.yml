@@ -1,0 +1,16 @@
+visible: true
+slug: computational-mechanics
+title: "Computational Mechanics & FEM"
+institution: "Polytech Grenoble"
+level: "Engineering degree (Bac+4/5)"
+years: "2013 — 2024"
+hours: "~40h/year"
+description: >
+  Numerical modelling of solid mechanics problems using the finite element
+  method. From theoretical foundations to industrial applications with Ansys
+  Workbench. Includes hands-on lab sessions.
+topics:
+  - Finite element method fundamentals
+  - Mesh generation and convergence
+  - Structural analysis with Ansys
+  - Industrial applications

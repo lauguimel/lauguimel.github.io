@@ -1,0 +1,16 @@
+visible: true
+slug: advanced-fluid-dynamics
+title: "Advanced Fluid Dynamics"
+institution: "Polytech Grenoble"
+level: "Engineering degree (Bac+5)"
+years: "2015 — 2024"
+hours: "~30h/year"
+description: >
+  Extended treatment of fluid motion including boundary layers, turbulence
+  modelling, and computational approaches. Engineering analysis and applied
+  problem-solving with simulation tools (Fluent, OpenFOAM).
+topics:
+  - Navier-Stokes equations
+  - Boundary layers
+  - Turbulence modelling
+  - CFD with Fluent and OpenFOAM

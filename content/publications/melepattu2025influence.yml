@@ -2,16 +2,18 @@ visible: true
 featured: false
 cite_key: melepattu2025influence
 type: article
-title: "Influence of erythrocyte density on aggregability as a marker of cell age"
+title: "Influence of erythrocyte density on aggregability as a marker of cell age: Dissociation dynamics in extensional flow"
 authors:
-  - Puthumana Melepattu, Midhun
-  - Maîtrejean, Guillaume
-  - Podgorski, Thomas
-journal: ""
+  - "Puthumana Melepattu, Midhun"
+  - "Maîtrejean, Guillaume"
+  - "Wagner, Christian"
+  - "Podgorski, Thomas"
+journal: "Journal of Biomechanics"
 year: 2025
-volume: ""
-pages: ""
-doi: ""
+volume: "183"
+pages: "112603"
+doi: "10.1016/j.jbiomech.2025.112603"
+hal_url: "https://hal.science/hal-04996395"
 abstract: ""
 pdf_url: ""
 project_slug: ""

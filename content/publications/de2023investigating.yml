@@ -12,7 +12,8 @@ journal: 48th Congress of the Society of Biomechanics
 year: 2023
 volume: "26"
 pages: S60--S62
-doi: "10.1080/10255842.2023.2258827"
+doi: "10.1080/10255842.2023.2246304"
+hal_url: "https://hal.science/hal-04272594"
 abstract: "Investigation of human defecation by coupling fluid mechanical modeling and X-ray video-defecography on a large clinical cohort."
 pdf_url: ""
 project_slug: "gastrointestinal"

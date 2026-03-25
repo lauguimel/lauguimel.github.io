@@ -2,14 +2,20 @@ visible: true
 featured: false
 cite_key: roux2023characterization
 type: article
-title: Characterization of Agarose Gels in Solvent and Non-Solvent Media
-authors: []
-journal: Polymers
+title: "Characterization of Agarose Gels in Solvent and Non-Solvent Media"
+authors:
+  - "Roux, Denis C.D."
+  - "Jeacomine, Isabelle"
+  - "Maîtrejean, Guillaume"
+  - "Caton, François"
+  - "Rinaudo, Marguerite"
+journal: "Polymers"
 year: 2023
 volume: "15"
 pages: "2162"
-doi: ""
+doi: "10.3390/polym15092162"
+hal_url: "https://hal.science/hal-04299670"
 abstract: ""
 pdf_url: ""
 project_slug: "agarose-gels"
-tags: []
+tags: [agarose, gel, characterization]

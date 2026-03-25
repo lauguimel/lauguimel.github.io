@@ -10,9 +10,10 @@ authors:
   - El Kissi, Nadia
 journal: Physics of Fluids
 year: 2022
-volume: ""
-pages: ""
-doi: ""
+volume: "34"
+pages: "093103"
+doi: "10.1063/5.0100575"
+hal_url: "https://hal.science/hal-03818047"
 abstract: ""
 pdf_url: ""
 project_slug: "rheodrop"

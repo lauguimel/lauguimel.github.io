@@ -1,18 +1,18 @@
 visible: true
 featured: false
 cite_key: maitrejean2020Patent
-type: misc
-title: METHOD FOR DETERMINING THE RHEOLOGICAL PARAMETERS OF A FLUID
+type: patent
+title: "Method for Determining the Rheological Parameters of a Fluid"
 authors:
-  - Maîtrejean, Guillaume
-  - Roux, Denis
-  - Universite Grenobles Alpes
-journal: ""
-year: .nan
+  - "Maîtrejean, Guillaume"
+  - "Roux, Denis"
+journal: "Patent WO FR3112856A1"
+year: 2020
 volume: ""
 pages: ""
 doi: ""
+hal_url: ""
 abstract: ""
 pdf_url: ""
 project_slug: "rheodrop"
-tags: []
+tags: [patent, rheology, inkjet]

@@ -6,7 +6,7 @@ subtitle: "AI-driven analysis of rectal evacuation dynamics from X-ray video-def
 date_start: 2022
 date_end: null
 tags: [biomechanics, deep-learning, medical-imaging, fluid-mechanics, clinical-data, computer-vision]
-thumbnail: "/images/projects/gastrointestinal/evacuation_clusters.png"
+thumbnail: "/images/projects/gastrointestinal/method.png"
 description: >
   Large-scale analysis of human defecation mechanics combining deep learning segmentation
   (SAM 2, Detectron2) with computational fluid dynamics modeling on 1488 patients from
@@ -35,14 +35,12 @@ long_description: >
   anchor-frame propagation, processing 447 out of 463 eligible patients with improved
   temporal consistency.
 collaborators:
-  - name: "Clement de Loubens"
-  - name: "Henrique Lefundes Da Silva"
-  - name: "Stephane Tanguy"
-  - name: "Jean-Luc Faucheron"
-  - name: "Anais Dubreuil"
+  - name: "Clément de Loubens (LRP)"
+  - name: "Faisal Ahmad"
+  - name: "Stéphane Tanguy"
 links:
   - label: "SB 2023 Conference Paper"
-    url: "https://doi.org/10.1080/10255842.2023.2258827"
+    url: "https://doi.org/10.1080/10255842.2023.2246304"
 tech: [Python, SAM 2, Detectron2, PyTorch, OpenFOAM, scikit-learn, LaTeX]
 figures:
   - src: "/images/projects/gastrointestinal/evacuation_clusters.png"

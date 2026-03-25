@@ -1,0 +1,15 @@
+visible: true
+slug: strength-of-materials
+title: "Strength of Materials"
+institution: "Polytech Grenoble"
+level: "Engineering degree (Bac+4)"
+years: "2013 — 2024"
+hours: "~40h/year"
+description: >
+  Analysis of axial, bending and torsional loading in structural elements.
+  Stress distribution, failure criteria, and dimensioning of mechanical components.
+topics:
+  - Axial, bending and torsional loading
+  - Stress distribution in beams and shafts
+  - Failure criteria (Von Mises, Tresca)
+  - Structural dimensioning

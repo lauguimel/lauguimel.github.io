@@ -46,6 +46,7 @@ export interface Publication {
 	volume: string;
 	pages: string;
 	doi: string;
+	hal_url: string;
 	abstract: string;
 	pdf_url: string;
 	project_slug: string;

@@ -1,15 +1,19 @@
 visible: true
-featured: false
+featured: true
 cite_key: chandrashekar2025flow
 type: article
-title: "Flow of viscoelastic fluids"
-authors: ["Chandrashekar, V.", "Maîtrejean, G.", "Sauret, E."]
+title: "Flow asymmetry enhanced by viscoelasticity"
+authors:
+  - "ChandraShekar, Vivaswan"
+  - "Maîtrejean, Guillaume"
+  - "Bodiguel, Hugues"
 journal: "Physical Review Fluids"
 year: 2025
-volume: ""
-pages: ""
-doi: ""
+volume: "10"
+pages: "023302"
+doi: "10.1103/PhysRevFluids.10.023302"
+hal_url: ""
 abstract: ""
 pdf_url: ""
 project_slug: viscoelastic
-tags: [viscoelastic, rheology]
+tags: [viscoelastic, flow-asymmetry, microfluidics]

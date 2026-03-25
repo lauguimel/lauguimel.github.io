@@ -1,18 +1,18 @@
 visible: true
 featured: true
-slug: kraken
-title: "Kraken"
+slug: onyx
+title: "Onyx"
 subtitle: "AI-powered ecosystem for computational fluid dynamics"
 date_start: 2024
 date_end: null
 tags: [machine-learning, cfd, openfoam, onnx, ai, automation]
-thumbnail: "/images/projects/kraken.jpg"
+thumbnail: "/images/projects/onyx.png"
 description: >
   Modular ecosystem integrating AI models into CFD workflows. Includes a model hub
-  (kraken-hub) for ONNX-based rheological models and an expert system (kraken-foam)
+  (onyx-hub) for ONNX-based rheological models and an expert system (onyx-foam)
   for automated OpenFOAM case setup.
 long_description: >
-  Kraken-hub is the central model catalogue and distribution layer of the Kraken ecosystem.
+  Onyx-hub is the central model catalogue and distribution layer of the Onyx ecosystem.
   It provides a standardized pipeline to convert PyTorch models to ONNX format for deployment
   inside OpenFOAM solvers, covering turbulence (TBNN, FIML, BNNRANS), rheology (ICNN), and
   operator learning models. Each model is documented with a Pydantic-validated model card,
@@ -22,7 +22,7 @@ long_description: >
   viscosity models, wall functions, and constitutive laws for solid mechanics.
 
 
-  Kraken-foam is a CFD expert system organized in three layers. The pre-simulation layer uses
+  Onyx-foam is a CFD expert system organized in three layers. The pre-simulation layer uses
   decision trees compiled from 30–50 curated research papers to recommend the appropriate
   solver, numerical schemes, and parameters for a given problem — avoiding common pitfalls
   such as enthalpy-dominated buoyancy crashes in atmospheric simulations. The monitoring layer
@@ -32,14 +32,14 @@ long_description: >
   the user's engineering objectives.
 
 
-  The broader Kraken vision is to bridge the gap between machine learning research and
+  The broader Onyx vision is to bridge the gap between machine learning research and
   production CFD workflows. By standardizing model export (ONNX opset 18), providing
   benchmark-validated deployment, and automating case setup through expert knowledge,
-  Kraken aims to make AI-augmented simulation accessible to engineers without ML expertise.
+  Onyx aims to make AI-augmented simulation accessible to engineers without ML expertise.
   The ecosystem is designed for HPC deployment, with Docker containers for reproducibility
-  and integration with parameter sweep tools (kraken-sim) for large-scale studies.
+  and integration with parameter sweep tools (onyx-sim) for large-scale studies.
 collaborators:
   - name: "Edoardo Sauret (QUT)"
 links: []
-tech: [Python, ONNX, OpenFOAM, FastAPI, Docker, HPC]
+tech: [ONNX, OpenFOAM]
 figures: []
