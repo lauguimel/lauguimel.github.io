@@ -1,0 +1,41 @@
+visible: true
+featured: false
+category: personal
+slug: weather-downscaling
+title: "Weather Downscaling"
+subtitle: "Zooming in on the weather — from global forecasts to mountain-scale predictions"
+date_start: 2020
+date_end: null
+tags: [machine-learning, meteorology, downscaling, geospatial]
+thumbnail: "/images/projects/weather-downscaling.png"
+description: >
+  Global weather models predict the atmosphere at ~25 km resolution — far too
+  coarse to capture what happens around a mountain ridge or in a valley.
+  This project uses machine learning to "zoom in" on those forecasts and produce
+  local, high-resolution wind and weather predictions.
+long_description: >
+  Weather forecasts from global models like GFS or ECMWF are remarkably good at
+  predicting large-scale patterns — fronts, pressure systems, jet streams. But
+  they work on grids of 10–25 km, which means they essentially see mountains as
+  smooth bumps. For anyone who flies a paraglider, climbs, or surfs, the details
+  that matter — thermals, valley winds, turbulence behind a ridge — are invisible
+  at that scale.
+
+
+  Downscaling bridges this gap. The idea is to train a machine learning model on
+  the relationship between coarse global forecasts and fine-scale observations
+  (weather stations, reanalysis data), so that it learns to add the missing local
+  detail. Think of it as an "enhance" button for weather maps — but one grounded
+  in physics and data rather than guesswork.
+
+
+  This personal project is driven by my passion for outdoor sports and numerical
+  weather modelling. It combines geospatial data processing, statistical learning,
+  and a healthy dose of terrain awareness.
+collaborators: []
+links: []
+tech: [Python, scikit-learn, xarray, GDAL, PostGIS]
+figures:
+  - src: "/images/projects/weather-downscaling.png"
+    caption: "Wind streamlines over complex terrain at high resolution"
+    credit: "https://doi.org/10.1038/s41467-026-70562-5"

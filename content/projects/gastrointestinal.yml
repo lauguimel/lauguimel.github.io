@@ -2,38 +2,39 @@ visible: true
 featured: true
 slug: gastrointestinal
 title: "Gastrointestinal Biomechanics"
-subtitle: "AI-driven analysis of rectal evacuation dynamics from X-ray video-defecography"
+subtitle: "Using AI and fluid mechanics to understand digestive disorders"
 date_start: 2022
 date_end: null
-tags: [biomechanics, deep-learning, medical-imaging, fluid-mechanics, clinical-data, computer-vision]
+tags: [biomechanics, AI, medical-imaging, fluid-mechanics]
 thumbnail: "/images/projects/gastrointestinal/method.png"
 description: >
-  Large-scale analysis of human defecation mechanics combining deep learning segmentation
-  (SAM 2, Detectron2) with computational fluid dynamics modeling on 1488 patients from
-  X-ray video-defecography. Identification of distinct kinetic phenotypes that reveal
-  discordances between radiological reports and objective evacuation dynamics.
+  Digestive disorders affect millions, yet diagnosis often relies on subjective
+  interpretation of medical images. We combine AI-based video analysis with fluid
+  mechanics to bring objective, quantitative measures to clinical evaluation.
 long_description: >
-  This project investigates human defecation biomechanics by coupling AI-based image
-  analysis with fluid mechanical modeling on a unique clinical dataset of 1488 patients
-  (CHU Grenoble, 1999-2005). We developed an automated pipeline using Detectron2 and
-  SAM 2 to segment the rectum in X-ray video-defecography sequences, extracting
-  time-resolved evacuation curves for each patient.
+  When a patient undergoes a video-defecography exam (a real-time X-ray of rectal
+  evacuation), a radiologist watches the footage and writes a qualitative report:
+  "normal" or "abnormal." But what if we could extract precise, quantitative
+  information from those same images?
 
 
-  Two main research directions are pursued. First, we validated Yang's evacuation time
-  law on this large cohort using Bingham rheometry, establishing quantitative benchmarks
-  for normal vs. pathological evacuation times. Second, we applied variational
-  autoencoders (VAE) with attention mechanisms to discover latent evacuation phenotypes
-  through unsupervised temporal clustering. This analysis revealed two distinct kinetic
-  populations (evacuators vs. non-evacuators) and showed that 35% of patients with
-  "Abnormal" radiological reports actually exhibit kinetically normal evacuation patterns
-  -- suggesting systematic over-interpretation of morphological findings in clinical
-  practice.
+  That's what we set out to do. Using modern AI segmentation models (SAM 2), we
+  automatically track the shape of the rectum frame by frame across thousands of
+  patient videos, generating evacuation curves — essentially, a plot of how
+  quickly and completely the organ empties over time.
 
 
-  The segmentation pipeline was upgraded from Detectron2 (Mask R-CNN) to SAM 2 with
-  anchor-frame propagation, processing 447 out of 463 eligible patients with improved
-  temporal consistency.
+  With nearly 1,500 patients analysed, these curves reveal something surprising:
+  about a third of patients labelled "abnormal" by radiologists actually evacuate
+  in a perfectly normal way according to objective fluid mechanics criteria. This
+  suggests that morphological appearance alone can be misleading, and that
+  dynamic, quantitative analysis could improve clinical decision-making.
+
+
+  We also use unsupervised learning (variational autoencoders) to discover
+  natural groupings among patients — letting the data speak rather than
+  imposing predefined categories. This work sits at the intersection of fluid
+  mechanics, medical imaging, and machine learning.
 collaborators:
   - name: "Clément de Loubens (LRP)"
   - name: "Faisal Ahmad"

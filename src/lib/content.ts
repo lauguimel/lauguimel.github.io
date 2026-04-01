@@ -34,7 +34,9 @@ export function getSiteConfig(): SiteConfig {
 }
 
 export function getProjects(): Project[] {
-	return parseAll<Project>(projectFiles).sort((a, b) => b.date_start - a.date_start);
+	return parseAll<Project>(projectFiles)
+		.map((p) => ({ ...p, category: p.category || 'research' }))
+		.sort((a, b) => b.date_start - a.date_start);
 }
 
 export function getFeaturedProjects(): Project[] {

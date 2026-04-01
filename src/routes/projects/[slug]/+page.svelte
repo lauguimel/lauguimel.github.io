@@ -12,6 +12,8 @@
 	const dateRange = isOngoing
 		? `${project.date_start}–present`
 		: `${project.date_start}–${project.date_end}`;
+
+	const hasTerrainViewer = project.slug === 'weather-downscaling';
 </script>
 
 <SEO title={project.title} description={project.description ?? project.subtitle} url={`/projects/${project.slug}`} />
@@ -67,6 +69,19 @@
 					{/if}
 				{/each}
 			</div>
+		</section>
+	{/if}
+
+	<!-- Interactive terrain viewer (downscaling project) -->
+	{#if hasTerrainViewer}
+		<section class="mb-10">
+			<h2 class="text-xl font-bold text-gray-900 dark:text-white mb-4">Interactive Demo</h2>
+			<p class="text-sm text-gray-500 dark:text-gray-400 mb-4">
+				Wind simulation over Uluru at three grid resolutions. Rotate and zoom to explore how terrain detail affects the flow prediction.
+			</p>
+			{#await import('$lib/components/TerrainViewer.svelte') then module}
+				<module.default />
+			{/await}
 		</section>
 	{/if}
 

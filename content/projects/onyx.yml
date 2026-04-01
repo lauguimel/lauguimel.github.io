@@ -2,42 +2,38 @@ visible: true
 featured: true
 slug: onyx
 title: "Onyx"
-subtitle: "AI-powered ecosystem for computational fluid dynamics"
+subtitle: "Making AI-augmented simulation accessible to engineers"
 date_start: 2024
 date_end: null
-tags: [machine-learning, cfd, openfoam, onnx, ai, automation]
+tags: [AI, cfd, openfoam, automation]
 thumbnail: "/images/projects/onyx.png"
 description: >
-  Modular ecosystem integrating AI models into CFD workflows. Includes a model hub
-  (onyx-hub) for ONNX-based rheological models and an expert system (onyx-foam)
-  for automated OpenFOAM case setup.
+  Running a fluid dynamics simulation requires years of expertise to set up
+  correctly. Onyx is an AI-powered toolkit that helps engineers configure,
+  run, and monitor simulations — and inject machine learning models directly
+  into the physics solver.
 long_description: >
-  Onyx-hub is the central model catalogue and distribution layer of the Onyx ecosystem.
-  It provides a standardized pipeline to convert PyTorch models to ONNX format for deployment
-  inside OpenFOAM solvers, covering turbulence (TBNN, FIML, BNNRANS), rheology (ICNN), and
-  operator learning models. Each model is documented with a Pydantic-validated model card,
-  round-trip validated against the original PyTorch output, and shipped with reproducible
-  OpenFOAM benchmark cases. The catalogue currently tracks over 30 models across four tiers
-  of exportability, with roles spanning Reynolds stress anisotropy, source-term corrections,
-  viscosity models, wall functions, and constitutive laws for solid mechanics.
+  Computational fluid dynamics (CFD) is a powerful tool, but it comes with a
+  steep learning curve. Choosing the right solver, mesh, numerical schemes, and
+  turbulence model requires deep expertise — and a single bad choice can make
+  a simulation crash or produce misleading results.
 
 
-  Onyx-foam is a CFD expert system organized in three layers. The pre-simulation layer uses
-  decision trees compiled from 30–50 curated research papers to recommend the appropriate
-  solver, numerical schemes, and parameters for a given problem — avoiding common pitfalls
-  such as enthalpy-dominated buoyancy crashes in atmospheric simulations. The monitoring layer
-  provides real-time surveillance of running simulations through OpenFOAM function objects,
-  detecting NaN divergence, CFL violations, oscillation, and convergence stalls, with
-  automatic recovery strategies. The post-evaluation layer assesses result quality against
-  the user's engineering objectives.
+  Onyx tackles this problem on two fronts. First, it acts as an **expert system**:
+  drawing on knowledge distilled from dozens of research papers, it recommends
+  simulation settings, monitors the run in real time, and catches common failures
+  (divergence, numerical oscillations) before the engineer even notices.
 
 
-  The broader Onyx vision is to bridge the gap between machine learning research and
-  production CFD workflows. By standardizing model export (ONNX opset 18), providing
-  benchmark-validated deployment, and automating case setup through expert knowledge,
-  Onyx aims to make AI-augmented simulation accessible to engineers without ML expertise.
-  The ecosystem is designed for HPC deployment, with Docker containers for reproducibility
-  and integration with parameter sweep tools (onyx-sim) for large-scale studies.
+  Second, Onyx provides a **model hub** — a library of AI models that can be
+  plugged directly into OpenFOAM simulations. These neural networks can replace
+  or augment traditional physics models: predicting turbulence more accurately,
+  modelling complex rheological behavior, or correcting wall boundary conditions.
+  All models are validated against reference solutions before deployment.
+
+
+  The ambition is to lower the barrier between machine learning research and
+  everyday engineering simulation, making AI-augmented CFD practical and reliable.
 collaborators:
   - name: "Edoardo Sauret (QUT)"
 links: []

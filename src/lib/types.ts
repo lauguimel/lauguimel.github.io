@@ -19,6 +19,7 @@ export interface SiteConfig {
 export interface Project {
 	visible: boolean;
 	featured: boolean;
+	category: 'research' | 'personal';
 	slug: string;
 	title: string;
 	subtitle: string;

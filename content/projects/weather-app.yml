@@ -1,0 +1,34 @@
+visible: false
+featured: false
+category: personal
+slug: weather-app
+title: "Outdoor Weather App"
+subtitle: "Weather forecasts designed for pilots, climbers, and surfers"
+date_start: 2021
+date_end: null
+tags: [web-app, meteorology, outdoor, geospatial]
+thumbnail: ""
+description: >
+  Standard weather apps tell you if it will rain. But will there be thermals
+  for flying? Will the wind be safe on the ridge? This app is built for
+  outdoor enthusiasts who need specific, location-aware forecasts.
+long_description: >
+  Most weather apps are designed for everyday life — umbrella or no umbrella.
+  But outdoor sports require very different information: thermal activity for
+  paragliding, wind direction and gusts at summit level for mountaineering,
+  swell period and direction for surfing.
+
+
+  This web application aggregates multiple weather data sources and presents
+  them through sport-specific visualisations. Instead of a generic temperature
+  forecast, a paraglider pilot sees thermal probability, wind convergence zones,
+  and cloud base altitude on an interactive map.
+
+
+  Built as a side project out of personal need, it combines my background in
+  fluid mechanics (understanding atmospheric flows), data engineering (real-time
+  data pipelines), and web development.
+collaborators: []
+links: []
+tech: [JavaScript, Node.js, Leaflet, PostgreSQL/PostGIS, Docker]
+figures: []

@@ -2,32 +2,35 @@ visible: true
 featured: true
 slug: rheodrop
 title: "RheoDrop"
-subtitle: "AI-driven rheological identification via inkjet drop formation"
+subtitle: "What if a simple droplet could reveal the nature of a fluid?"
 date_start: 2016
 date_end: null
-tags: [machine-learning, cnn, rheology, inkjet, fluid-mechanics, deep-learning, cij]
+tags: [fluid-mechanics, deep-learning, rheology, AI]
 thumbnail: "/images/projects/rheodrop/thumbnail.jpg"
 description: >
-  Machine learning framework for identifying fluid rheological properties
-  (viscosity, surface tension, density) from high-speed images of inkjet
-  drop formation using the Rayleigh-Plateau instability.
+  Can we identify a fluid's properties just by watching it form droplets?
+  RheoDrop uses AI to answer this question, turning inkjet images into
+  a fast, contactless rheological measurement.
 long_description: >
-  RheoDrop leverages the Rayleigh-Plateau instability in continuous inkjet (CIJ)
-  printing to identify fluid properties without conventional rheometry. By analyzing
-  the morphology of a jet breaking into droplets, convolutional neural networks
-  can infer viscosity, surface tension, and density simultaneously.
+  When a thin jet of liquid breaks into droplets — a phenomenon known as the
+  Rayleigh-Plateau instability — the shape of each drop carries a fingerprint
+  of the fluid's viscosity, surface tension, and density. In continuous inkjet
+  (CIJ) printing, this breakup is extremely repeatable, producing thousands of
+  nearly identical droplets per second.
 
 
-  The project has three phases. Phase 1 (2022) demonstrated proof of concept on
-  numerical data, achieving MAPE < 1% for viscosity identification using DNNs trained
-  on Basilisk CFD simulations. Phase 2 (2025) extended this to real experimental data
-  from a Markem-Imaje piezoelectric CIJ printer with 10 Newtonian fluids, reaching
-  98.5% classification accuracy and MAPE < 1% for viscosity and density.
+  The idea behind RheoDrop is simple: if the drop shape depends on the fluid
+  properties, can we work backwards — observe the drops, and let a neural network
+  figure out what the fluid is made of? This is exactly what we do. We train
+  deep learning models on images of jets and droplets, and the network learns
+  to predict fluid properties directly from what it sees.
 
 
-  Phase 3 (ongoing) explores conditional Beta-VAE architectures for unsupervised
-  discovery of rheological properties in non-Newtonian fluids, moving beyond
-  supervised classification to continuous property estimation in latent space.
+  This approach replaces expensive and time-consuming laboratory rheometry with
+  a camera and an algorithm. It works on Newtonian fluids today, and we are now
+  pushing towards non-Newtonian fluids using generative models (variational
+  autoencoders) that can discover hidden rheological features without being told
+  what to look for. The technology is patented and in pre-commercialisation.
 
 
 collaborators:
