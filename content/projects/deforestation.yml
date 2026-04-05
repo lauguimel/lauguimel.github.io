@@ -35,7 +35,7 @@ collaborators:
   - name: "Marc Bouvier"
 links:
   - label: "Streamlit App"
-    url: "https://deforestation-congo.streamlit.app"
+    url: "https://one-leaf-left.streamlit.app"
   - label: "GitHub"
     url: "https://github.com/lauguimel/deforestation"
 tech: [Python, XGBoost, scikit-learn, SHAP, Google Earth Engine, GeoPandas, Streamlit, Plotly]
